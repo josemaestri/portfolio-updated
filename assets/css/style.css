@@ -1,0 +1,51 @@
+ 
+:root{
+  --primary-color: #4aaaa5;
+  --body-color: #777;
+  --info-color: #17a2b8;
+}
+
+
+
+body{
+  color: var(--body-color);
+  background: url('../img/skulls.png') repeat;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+a{
+  transition: all 250ms ease-in-out;
+}
+a:hover{
+  color: var(--info-color) !important;
+  text-decoration: none;
+}
+
+.border-2{
+  border-width: 4px !important;
+}
+
+
+.main.portfolio .gallery-thumb{
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.main.portfolio .gallery-thumb span{
+  bottom: 10px;
+  left: 0;
+}
+
+.main.portfolio .gallery-thumb:hover{
+  box-shadow: 0 0 5px #666;
+}
+
+
+@media screen and (max-width: 767px) {
+  .logo{
+    background: var(--info-color);
+  }
+}
